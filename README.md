@@ -1,7 +1,11 @@
 # DFA-minimization
-Thuật toán tối thiểu hoá otomat
 
-## file: input.txt
+VNU - HUS - MIM - 2021
+
+MAT3509 2 - Automata
+
+
+## File: input.txt
     (Dữ liệu đầu vào)
     
     dòng 1: S -  Tập các trạng thái của otomat
@@ -14,12 +18,21 @@ Thuật toán tối thiểu hoá otomat
     
 ## DFA-minimization: 2 cách
 
-    cách1: lập trình bằng cách sử dụng thuật toán tối thiểu hoá otomat tài liệu cô đã cho.
-    cách2: Sử dụng thư viện pythomata => có ở python 
-        cài đặt thư viện: pip install pythomata
-        
-    => cách 2 có ưu điểm nhanh gọn vì đã được viết sẵn chỉ cần gọi hàm
-    => nhược điểm cách 2 là dữ liệu đầu vào ở dạng SET (kiểu dữ liệu này là một tập giá trị không có thứ tự)
-       +) dữ liệu ở dạng set in ra màn hình sẽ bị lỗi hiển thị (xáo trộn vị trí các phần tử)
-       +) ouput đưa ra state tương ứng với các state gốc nhưng ở dạng số (do thư viện chưa format lại)
-       +) nếu in ra automaton gốc để dựa vào đó nhìn cách state tương ứng thì không được do state automaton gốc dạng set
+**Cách1**: lập trình bằng cách sử dụng thuật toán tối thiểu hoá otomat tài liệu cô đã cho.
+
+- JUPYTER NOTEBOOK: [here](https://github.com/dangdu259e/DFA-minimization/blob/main/DFA-minimization.ipynb)
+- PYTHON FILE: [here](https://github.com/dangdu259e/DFA-minimization/blob/main/DFA-minimization.py)
+
+**Cách2**: Sử dụng thư viện pythomata => 
+#### Cài đặt thư viện:
+`$ pip install pythomata`
+
+
+#### Nhận xét
+- Ưu điểm: Cách 2 nhanh gọn vì đã được viết sẵn chỉ cần gọi hàm để thực hiện
+- Nhược điểm: 
+   + Cách 2 là dữ liệu đầu vào ở dạng SET (kiểu dữ liệu này là một tập giá trị không có thứ tự)
+   + dữ liệu ở dạng set in ra màn hình sẽ bị lỗi hiển thị (xáo trộn vị trí các phần tử)
+   + ouput đưa ra state tương ứng với các state gốc nhưng ở dạng số (do thư viện chưa format lại)
+   + nếu in ra automaton gốc để dựa vào đó nhìn cách state tương ứng thì không được do state automaton gốc dạng set
+
